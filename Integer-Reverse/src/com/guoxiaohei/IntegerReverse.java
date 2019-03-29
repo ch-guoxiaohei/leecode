@@ -9,7 +9,8 @@ public class IntegerReverse {
 
 
   public static void main(String[] args) {
-    System.out.println(reverse(-1256326561));
+    System.out.println(reverse(123));
+    System.out.println(reverse(1534236469));
   }
 
   /**
@@ -18,11 +19,12 @@ public class IntegerReverse {
    * @param target 目标整数
    */
   public static int reverse(int target) {
-    int reverse = 0;
+    long reverse = 0;
     while (target != 0) {
       reverse = 10 * reverse + target % 10;
       target /= 10;
     }
-    return (reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) ? 0 : reverse;
+    reverse = (reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) ? 0 : reverse;
+    return (int) reverse;
   }
 }
