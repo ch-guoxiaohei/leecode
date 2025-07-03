@@ -1,4 +1,4 @@
-package classic;
+package com.guoxiaohei.classic;
 
 
 import java.util.Arrays;
