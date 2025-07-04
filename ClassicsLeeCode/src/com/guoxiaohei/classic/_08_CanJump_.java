@@ -25,6 +25,7 @@ public class _08_CanJump_ {
     public static void main(String[] args) {
         boolean b = canJump(new int[]{3, 2, 1, 0, 4});
         System.out.println(b);
+        System.out.println(canJump(new int[]{2, 3, 1, 2, 4, 2, 3}));
     }
 
     /**
@@ -45,4 +46,6 @@ public class _08_CanJump_ {
         }
         return canJump;
     }
+
+
 }
