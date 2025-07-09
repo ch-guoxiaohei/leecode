@@ -2,6 +2,8 @@
 
 ## [ClassicsLeeCode](ClassicsLeeCode) 存放`leecode`的解题方法。
 
+## [sql-practice](sql-practice) 存放`leecode` sql的解题方法。
+
 ### 常见的解题技巧
 
 - 双指针解题法
