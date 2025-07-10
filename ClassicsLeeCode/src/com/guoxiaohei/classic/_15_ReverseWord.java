@@ -66,5 +66,12 @@ public class _15_ReverseWord {
         return String.join(" ", wordList);
     }
 
+    public static String reverseWords3(String s) {
+        // todo other solution
+        // 1. 双指针
+        // 2. 双端队列
+        return "";
+    }
+
 
 }
