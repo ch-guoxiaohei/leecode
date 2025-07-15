@@ -14,3 +14,10 @@
 - 动态规划
 - 可达性分析
 - KMP 解法
+
+### 题目列表
+
+| Package Name                       | Class Name                                                                             | What Question |
+|------------------------------------|----------------------------------------------------------------------------------------|---------------|
+| [ClassicsLeeCode](ClassicsLeeCode) | [CanConstruct.java](ClassicsLeeCode/src/com/guoxiaohei/classic/hash/CanConstruct.java) | 383. 赎金信      |
+| [ClassicsLeeCode](ClassicsLeeCode) | [IsIsomorphic.java](ClassicsLeeCode/src/com/guoxiaohei/classic/hash/IsIsomorphic.java) | 205. 同构字符串    |

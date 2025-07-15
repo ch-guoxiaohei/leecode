@@ -1,4 +1,4 @@
-package com.guoxiaohei.classic;
+package com.guoxiaohei.classic.hash;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,7 +35,7 @@ import java.util.Map;
  * 输入：ransomNote = "aa", magazine = "aab"
  * 输出：true
  */
-public class _19_CanConstruct {
+public class CanConstruct {
 
     public static void main(String[] args) {
         System.out.println(canConstruct("aa", "ab"));
