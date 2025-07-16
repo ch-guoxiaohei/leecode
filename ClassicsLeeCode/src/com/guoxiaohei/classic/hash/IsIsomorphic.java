@@ -16,6 +16,18 @@ import java.util.Map;
  */
 public class IsIsomorphic {
 
+    /**
+     * 什么是同构字符串
+     * 首先，我们需要明确什么是同构字符串。根据之前的讨论，两个字符串 s 和 t 是同构的，如果：
+     * <p>
+     * s 和 t 的长度相同。
+     * <p>
+     * 存在一个从 s 到 t 的字符的双射（即一一对应且满射）映射，使得 s 中的每个字符都可以被唯一地替换为 t 中的对应字符，同时保持字符的顺序。
+     * <p>
+     * 反过来，t 中的每个字符也唯一地对应 s 中的一个字符。
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(isIsomorphic2("13", "42"));
     }
