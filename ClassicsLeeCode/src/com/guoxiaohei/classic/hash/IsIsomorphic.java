@@ -1,5 +1,8 @@
 package com.guoxiaohei.classic.hash;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 205. 同构字符串
  * <p>
@@ -14,12 +17,53 @@ package com.guoxiaohei.classic.hash;
 public class IsIsomorphic {
 
     public static void main(String[] args) {
-
+        System.out.println(isIsomorphic2("13", "42"));
     }
 
 
+    /**
+     * 维护两个Hash 表， 分别存储 s 和 t 中字符的映射关系
+     *
+     * @param s
+     * @param t
+     * @return
+     */
     public static boolean isIsomorphic(String s, String t) {
-        // todo
-        return false;
+        Map<Character, Character> st = new HashMap<>();
+        Map<Character, Character> ts = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char x = s.charAt(i), y = t.charAt(i);
+            // 如果 x 已经被映射到了别的字符，并且不等于y，或者 y 已经被映射到了别的字符，并且不等于x，那么返回false
+            // 说明存在不同的映射关系
+            if (st.containsKey(x) && st.get(x) != y || ts.containsKey(y) && ts.get(y) != x) {
+                return false;
+            }
+            st.put(x, y);
+            ts.put(y, x);
+        }
+        return true;
+    }
+
+    /**
+     * 维护两个Hash 表， 分别存储 s 和 t 中字符的映射关系
+     *
+     * @param s
+     * @param t
+     * @return
+     */
+    public static boolean isIsomorphic2(String s, String t) {
+        char[] sChars = new char[128];
+        char[] tChars = new char[128];
+        for (int i = 0; i < s.length(); i++) {
+            char x = s.charAt(i), y = t.charAt(i);
+            // 如果 x 已经被映射到了别的字符，并且不等于y，或者 y 已经被映射到了别的字符，并且不等于x，那么返回false
+            // 说明存在不同的映射关系
+            if (sChars[x] != 0 && sChars[x] != y || tChars[y] != 0 && tChars[y] != x) {
+                return false;
+            }
+            sChars[x] = y;
+            tChars[y] = x;
+        }
+        return true;
     }
 }
