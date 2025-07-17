@@ -21,3 +21,4 @@
 |------------------------------------|----------------------------------------------------------------------------------------|---------------|
 | [ClassicsLeeCode](ClassicsLeeCode) | [CanConstruct.java](ClassicsLeeCode/src/com/guoxiaohei/classic/hash/CanConstruct.java) | 383. 赎金信      |
 | [ClassicsLeeCode](ClassicsLeeCode) | [IsIsomorphic.java](ClassicsLeeCode/src/com/guoxiaohei/classic/hash/IsIsomorphic.java) | 205. 同构字符串    |
+| [ClassicsLeeCode](ClassicsLeeCode) | [WordPattern.java](ClassicsLeeCode/src/com/guoxiaohei/classic/hash/WordPattern.java)   | 290. 单词规律     |
